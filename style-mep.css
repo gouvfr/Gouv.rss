@@ -1,0 +1,213 @@
+/* ___________ TYPOGRAPHIE _____________________ */
+/* Import de plusieurs typographies */
+
+@font-face {
+	font-family: 'Computer Modern Bright';
+	src: url('http://localhost:8000/font/cmunbmr.eot');
+	src: url('http://localhost:8000/font/cmunbmr.eot?#iefix') format('embedded-opentype'),
+		 url('http://localhost:8000/font/cmunbmr.woff') format('woff'),
+		 url('http://localhost:8000/font/cmunbmr.ttf') format('truetype'),
+		 url('http://localhost:8000/font/cmunbmr.svg#cmunbmr') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Computer Modern Bright';
+	src: url('http://localhost:8000/font/cmunbbx.eot');
+	src: url('http://localhost:8000/font/cmunbbx.eot?#iefix') format('embedded-opentype'),
+		 url('http://localhost:8000/font/cmunbbx.woff') format('woff'),
+		 url('http://localhost:8000/font/cmunbbx.ttf') format('truetype'),
+		 url('http://localhost:8000/font/cmunbbx.svg#cmunbbx') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Computer Modern Bright';
+	src: url('http://localhost:8000/font/cmunbmo.eot');
+	src: url('http://localhost:8000/font/cmunbmo.eot?#iefix') format('embedded-opentype'),
+		 url('http://localhost:8000/font/cmunbmo.woff') format('woff'),
+		 url('http://localhost:8000/font/cmunbmo.ttf') format('truetype'),
+		 url('http://localhost:8000/font/cmunbmo.svg#cmunbmo') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Computer Modern Bright';
+	src: url('http://localhost:8000/font/cmunbxo.eot');
+	src: url('http://localhost:8000/font/cmunbxo.eot?#iefix') format('embedded-opentype'),
+		 url('http://localhost:8000/font/cmunbxo.woff') format('woff'),
+		 url('http://localhost:8000/font/cmunbxo.ttf') format('truetype'),
+		 url('http://localhost:8000/font/cmunbxo.svg#cmunbxo') format('svg');
+	font-weight: bold;
+	font-style: italic;
+}
+
+
+
+
+
+
+/* ___________ MISE EN PAGE _____________________ */
+/* Départ de la mise en page, permiers tests typographiques */
+
+body {
+	font-family: 'Computer Modern Bright';
+	font-weight: normal;
+	font-size: 11pt;
+	font-kerning: 1pt;
+}
+
+.field-items {
+	font-family: 'Computer Modern Bright';
+	font-weight: normal;
+	font-size: 11pt;
+	font-kerning: 1pt;
+	line-height: 13pt;
+	font-weight: bold;
+}
+
+em {
+    font-style: italic;
+    font-size: 1em;
+	margin-left: 15px;
+}
+
+h1 {
+	font-family: 'Playfair Display SC', serif;
+	font-weight: normal;
+	font-size: 5em;
+	margin-left: -20mm;
+	-webkit-region-break-after: always;
+    -webkit-region-break-before: avoid;
+	-webkit-transform: rotate3d(1, 2, 3, 50deg);
+	/*padding-top: 40mm;
+	padding-left: 10mm;*/
+	-webkit-region-break-inside:avoid;
+	line-height: 60px;
+	margin-left: 20px;
+	padding-top: 120px;
+}
+
+h2 {
+	font-family: 'Playfair Display SC', serif;
+	-webkit-transform: rotate3d(1, 2, 3, 50deg);
+	font-size: 2em;
+	position: absolute;
+	margin-top: -20px;
+	-webkit-region-break-after: always;
+	font-weight: normal;
+	line-height: 32px;
+}
+
+h2.node-titre {
+	left: -100%;
+}
+
+img {
+	-webkit-filter: grayscale(100%);
+}
+
+abbr {
+	font-style: italic;
+	font-stretch: expanded;
+}
+
+.titre-texte {
+	display: none;
+}
+
+.entete-surtitre {
+	font-size: 1,8em;
+	padding: 10mm 0;
+	font-family: 'Playfair Display SC', serif;
+}
+
+.field-type-text-long {
+    margin: 0 50% 0 0mm;
+    -webkit-region-break-inside:avoid;
+}
+
+.oembed, .teaser, .field-type-image {
+	position: absolute;
+	margin: 0 0 0 50%;
+	padding-left: 40px;
+}
+
+.bouton-texte, .bouton {
+    display: none;
+}
+
+div.oembed-content {
+	border: 1px dashed blue;
+	padding: 6px;
+}
+
+div.galerie-galerie {
+	float: left;
+	width: 120mm;
+}
+
+.slide {
+	width: 45%;
+	float: left;
+	padding-right: 5%
+}
+
+.slide-legend {
+	margin-top: 20px;
+	margin-bottom: 5%;
+}
+
+/* ___________ PAGES _____________________ */
+/* Espacement et positionnement de pages spécifiques */
+
+
+#page-4 .body {
+	float: left;
+}
+
+section.body~section.body {
+	margin-left: 80mm;
+}
+
+section.body~section.body h2 {
+	margin: -80mm;
+}
+
+#page-1 section.body~section.body {
+	margin-left: 0;
+}
+
+
+/* ___________ TITRES _____________________ */
+/* Espacement et positionnement des titres */
+
+
+h1#ruralite {
+	width: 140%;
+	margin-top: 380px;
+	margin-left: -80px;
+	padding-top: 130px;
+	word-break: break-all;
+}
+
+
+#node-1831 {
+	margin-top: -391px;
+}
+
+
+#assurer {
+	margin-top: -200px;
+}
+
+
+/* ___________ FUN PART _____________________ */
+/* Remplacement de style selon la personne */
+
+.Manuel {
+    color: blue;
+}
