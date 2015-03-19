@@ -1,5 +1,7 @@
-HTML 2 print
+Édition automatique
 ============
+
+###HTML 2 print
 
 Utilise l'outil HTML 2 print d'OSP --> <https://github.com/osp/osp.tools.html2print>
 
