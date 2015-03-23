@@ -100,6 +100,7 @@ h2 {
 	-webkit-region-break-after: always;
 	font-weight: normal;
 	line-height: 32px;
+	margin-left: 160px;
 }
 
 h2.node-titre {
@@ -113,6 +114,32 @@ img {
 abbr {
 	font-style: italic;
 	font-stretch: expanded;
+}
+
+section.header {
+	width: 40px;
+	word-break: break-all;
+	position: absolute;
+	left: -30px;
+}
+
+.header::after {
+	font-weight: bold;	
+	text-transform: uppercase;
+	font-size: 10px;
+}
+
+.footer::after {
+	border: 1px solid black;
+	padding: 6px;
+	border-radius: 26px;
+}
+
+section.footer {
+	position: absolute;
+	right: -20px;
+	width: 20px;
+	font-weight: bold;
 }
 
 .titre-texte {
@@ -161,6 +188,10 @@ div.galerie-galerie {
 	margin-bottom: 5%;
 }
 
+iframe {
+	display: none;
+}
+
 /* ___________ PAGES _____________________ */
 /* Espacement et positionnement de pages spécifiques */
 
@@ -204,10 +235,67 @@ h1#ruralite {
 	margin-top: -200px;
 }
 
+#nord {
+	padding-top: 110px;
+	width: 170%;
+	margin-left: -30px
+}
 
-/* ___________ FUN PART _____________________ */
-/* Remplacement de style selon la personne */
+#loir {
+	padding-top: 20px;
+	width: 150%;
+	margin-left: -30px;
+}
 
-.Manuel {
-    color: blue;
+/* ___________ FORMAT 210x270mm _____________________ */
+/* Style pour le format A4 */
+
+@media all and  (min-width: 800px) and (max-width: 1200px) {
+	
+	
+	/* ___________ Définition du format ___________ */
+	
+	.paper {
+		width: 210mm;
+		height: 270mm;
+	}
+	
+	.page {
+		width: 210mm;
+		height: 270mm;
+	}
+	
+	.body {
+		width: 210mm;
+		height: 270mm;
+	}
+	
+	/* ___________ Titres & typographies ___________ */
+	
+	h1 {
+		margin-left: 22%;
+		padding-top: 250px;
+	}
+	
+	#loir {
+		padding-top: 120px;
+		margin-top: 600px;
+		width: 80%;
+	}
+	
+	#nord {
+		padding-top: 110px;
+		width: 70%;
+		margin-left: 23%;
+		padding-bottom: 0px;
+	}
+	
+	#ruralite {
+		width: 80%;
+		margin-top: 380px;
+		margin-left: 100px;
+		padding-top: 130px;
+		word-break: break-all;
+	}
+
 }
